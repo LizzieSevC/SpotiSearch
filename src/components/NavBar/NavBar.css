@@ -1,0 +1,30 @@
+  
+  header {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    height: 10vw;
+    width: 100vw;
+    }
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+li a:hover{ 
+    text-shadow: 0 0 5px black, 0 0 5px #8d0202,
+    0 0 5px #8d0202, 0 0 5px #ff0000, 0 0 5px #ff0000, 0 0 5px #ff0000;
+    font-size: 3.5vw;
+}
