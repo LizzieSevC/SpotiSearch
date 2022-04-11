@@ -4,7 +4,11 @@ import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 import DataApi from '../../api';
-import ResultCard from './ResultCard';
+import Paper from '@mui/material/Paper';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
 function SearchBar({placeholder, data}) {
@@ -62,7 +66,30 @@ function SearchBar({placeholder, data}) {
     <div className='searchResult'>
         {songs.map((value,index) => {
             return(
-                <ResultCard value={value} key={index} />
+
+<Paper key={value.id} className='resultCard' elevation={5}>
+<Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+    <p> Song: {value.Song} <br/>
+     Artist: {value.Artist} <br/>
+     Genre: {value.Genre} </p>
+        </AccordionSummary>
+        <AccordionDetails>
+
+    <p> Album: {value.Album} </p>
+    <p> Year: {value.Year} </p>
+    <p> Country: {value.Country} </p>
+    <p> Language: {value.Language} </p>
+
+        </AccordionDetails>
+      </Accordion>
+
+</Paper>
+
             );
         })}
     </div>
