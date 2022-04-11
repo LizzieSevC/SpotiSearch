@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import './SearchBar.css';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
@@ -11,8 +11,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 
-function SearchBar({placeholder, data}) {
-    const [filteredData, setFilteredData] = useState([]);
+function SearchBar({placeholder, /* data */}) {
+/*     const [filteredData, setFilteredData] = useState([]); */
     const [inputWord, setInputWord] = useState("");
     const [songs, setSongs] = useState([]);
 
@@ -62,7 +62,7 @@ function SearchBar({placeholder, data}) {
         </button>
     </form>
 
-    {songs.length != 0 && (
+    {songs.length !== 0 && (
     <div className='searchResult'>
         {songs.map((value,index) => {
             return(
