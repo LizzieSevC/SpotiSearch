@@ -1,7 +1,8 @@
   
   header {
     align-items: center;
-    background-color: black;
+    background: rgb(255,0,0);
+    background: linear-gradient(90deg, rgba(255,0,0,0.703016241299304) 0%, rgba(0,0,0,1) 49%, rgba(255,0,0,0.6983758700696056) 100%);
     display: flex;
     justify-content: space-evenly;
     height: 10vw;
@@ -11,7 +12,7 @@
 ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 40vw;
 }
@@ -20,7 +21,7 @@ li a {
     text-decoration: none;
     font-size: 3vw;
     font-weight: bold;
-    color: antiquewhite;
+    color: white;
 }
 
 li a:hover{ 

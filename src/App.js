@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import NavBar from '../src/components/NavBar/NavBar';
 import TableSearch from './components/TableSearch/TableSearch';
 import Home from './components/Home/Home';
+/* import './assets/css/fonts.css'; */
 
 function App() {
   return (

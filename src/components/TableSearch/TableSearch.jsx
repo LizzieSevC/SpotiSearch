@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
@@ -8,13 +8,16 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import TablePagination from '@mui/material/TablePagination';
 import data from '../SpotiCloneDataBase.json';
+import DataApi from '../../api';
 
 
 const TableSearch = () => {
 
   const [page, setPage] = React.useState(2);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
-  
+  const [songs, setSongs] = React.useState([]);
+
+
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -23,6 +26,15 @@ const TableSearch = () => {
     setRowsPerPage(parseInt(event.target.value, 10));
     setPage(0);
   }
+
+ const fetchMusic = async() => {
+  const res = await DataApi.get('/getallsearches');
+  setSongs(res.data);
+  }
+
+  useEffect(() => {
+    fetchMusic()
+  },[])
 
   return (
     <>
@@ -48,7 +60,7 @@ const TableSearch = () => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data
+          {songs
           .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
           .map((list, id) => (
             <TableRow
