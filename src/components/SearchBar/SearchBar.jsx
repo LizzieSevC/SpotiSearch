@@ -70,21 +70,24 @@ function SearchBar({placeholder, data}) {
 <Paper key={value.id} className='resultCard' elevation={5}>
 <Accordion>
         <AccordionSummary
+         
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-    <p> Song: {value.Song} <br/>
-     Artist: {value.Artist} <br/>
-     Genre: {value.Genre} </p>
+    <div className='cardText'>
+    <p> <span className='cardTitles'>Song:</span> {value.Song} </p>
+    <p><span className='cardTitles'>Artist:</span> {value.Artist}</p> 
+    <p><span className='cardTitles'>Genre:</span> {value.Genre} </p>
+    </div>
         </AccordionSummary>
         <AccordionDetails>
-
-    <p> Album: {value.Album} </p>
-    <p> Year: {value.Year} </p>
-    <p> Country: {value.Country} </p>
-    <p> Language: {value.Language} </p>
-
+    <div className='cardText2'>
+    <p> <span className='cardTitles'>Album:</span> {value.Album} </p>
+    <p> <span className='cardTitles'>Year:</span> {value.Year} </p>
+    <p> <span className='cardTitles'>Country:</span> {value.Country} </p>
+    <p> <span className='cardTitles'>Language:</span> {value.Language} </p>
+    </div>
         </AccordionDetails>
       </Accordion>
 
