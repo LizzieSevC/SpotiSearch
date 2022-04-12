@@ -6,9 +6,11 @@ This is an exercise inspired by the spotify search tool, it is also a technical 
 ✨ This is the font-end repository ✨
 
 To watch the page in action, go to the deploy right here:
+
 ⇉   https://spotisearchprueba.netlify.app/    ⇇
 
 To look at the back-end repository go here:
+
 ⇉   https://github.com/LizzieSevC/SpotiSearch-back    ⇇
 
 <h2> ⭐  Disclaimer ⭐ </h2>
