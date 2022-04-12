@@ -8,6 +8,9 @@ This is an exercise inspired by the spotify search tool, it is also a technical 
 To watch the page in action, go to the deploy right here:
 ⇉   https://spotisearchprueba.netlify.app/    ⇇
 
+To look at the back-end repository go here:
+⇉   https://github.com/LizzieSevC/SpotiSearch-back    ⇇
+
 <h2> ⭐  Disclaimer ⭐ </h2>
 
 The database was made through the https://www.mockaroo.com/ platform so it doesn't have real information about artists, and music in general.
@@ -50,3 +53,8 @@ The second one is "All Songs", this view is a table where the user can find all 
 <li>Axios: 0.26.1
 <li>react-router-dom: 18.0.0
 </ul>
+
+<h2> ⚠️ Atention 🚧 </h2>
+
+If you want to start this project on your own you'll have to go to your terminal and write: <h3> npm install </h3>
+This will install all the dependencies listed above.
