@@ -5,8 +5,8 @@ This is an exercise inspired by the spotify search tool, it is also a technical 
 
 This is the font-end repository
 
-Disclaimer:
-The database was made through mookcaroo platform so it doesn't have real information about artists, and music in general.
+⭐ Disclaimer ⭐
+The database was made through the https://www.mockaroo.com/ platform so it doesn't have real information about artists, and music in general.
 
 
 It has two different views:
