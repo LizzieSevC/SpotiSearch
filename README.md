@@ -1,9 +1,12 @@
 
-Welcome to SpotiSearch!
+<h1> Welcome to 🎶 SpotiSearch 🔎 <h1>
 
 This is an exercise inspired by the spotify search tool, it is also a technical test that evaluates full-stack developer skills.
 
-This is the font-end repository
+✨ This is the font-end repository ✨
+
+To watch the page in action, go to the deploy right here:
+⇉   https://spotisearchprueba.netlify.app/    ⇇
 
 ⭐ Disclaimer ⭐
 
