@@ -37,8 +37,8 @@ const TableSearch = () => {
 
   return (
     <>
-    <div>
-    <p>
+    <div  className='homeText'>
+    <p className='pageTitle'>
         All our songs, all the info, in one place:
     </p>
     </div> 
