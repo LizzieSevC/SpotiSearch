@@ -1,5 +1,5 @@
 
-<h1> Welcome to 🎶 SpotiSearch 🔎 <h1>
+<h1> Welcome to 🎶 SpotiSearch 🔎 </h1>
 
 This is an exercise inspired by the spotify search tool, it is also a technical test that evaluates full-stack developer skills.
 
@@ -8,12 +8,12 @@ This is an exercise inspired by the spotify search tool, it is also a technical 
 To watch the page in action, go to the deploy right here:
 ⇉   https://spotisearchprueba.netlify.app/    ⇇
 
-⭐ Disclaimer ⭐
+<h2> ⭐  Disclaimer ⭐ </h2>
 
 The database was made through the https://www.mockaroo.com/ platform so it doesn't have real information about artists, and music in general.
 
 
-It has two different views:
+<h2> The page has two different views: </h2>
 
 The first one is "Search", it allows the user to write an search for a specific song, artis or musical genre and display all the matching results from the database.
 
@@ -33,3 +33,12 @@ The second one is "All Songs", this view is a table where the user can find all 
 
 
 <img src="./public/rm3.png">
+
+
+<h2> Dependencies used: </h2>
+<ul>
+<li>Material UI: icons-material: 5.6.0
+<li>Material UI: material: 5.6.0
+<li>Axios: 0.26.1
+<li>react-router-dom: 18.0.0
+</ul>
