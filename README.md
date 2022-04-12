@@ -37,7 +37,8 @@ The second one is "All Songs", this view is a table where the user can find all 
 
 <h2> Dependencies used: </h2>
 <ul>
-<li>Material UI (Material and Icons)
-<li>Axios
-<li>react-router-dom
+<li>Material UI: icons-material: 5.6.0
+<li>Material UI: material: 5.6.0
+<li>Axios: 0.26.1
+<li>react-router-dom: 18.0.0
 </ul>
