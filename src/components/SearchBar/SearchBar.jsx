@@ -24,6 +24,7 @@ function SearchBar({placeholder, /* data */}) {
     const handleFilter = (event) => {
         const searchWord = event.target.value;
         setInputWord(searchWord);
+
         //testing searchbar function with local json
 /*         const newFilter = data.filter((value) => {
             return value.Song.toLowerCase().includes(searchWord.toLowerCase());
@@ -45,7 +46,6 @@ function SearchBar({placeholder, /* data */}) {
         const res = await DataApi.get('/get-searches/' + inputWord);
         setSongs(res.data);
         }
-
 
   return (
     <>
@@ -90,7 +90,6 @@ function SearchBar({placeholder, /* data */}) {
     </div>
         </AccordionDetails>
       </Accordion>
-
 </Paper>
 
             );

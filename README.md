@@ -12,6 +12,14 @@ To watch the page in action, go to the deploy right here:
 
 The database was made through the https://www.mockaroo.com/ platform so it doesn't have real information about artists, and music in general.
 
+Try searching for words like:
+<ul>
+<li>Enhance
+<li>Model
+<li>Cloned
+<li>Horizontal
+</ul>
+
 
 <h2> The page has two different views: </h2>
 
